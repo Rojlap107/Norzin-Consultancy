@@ -120,11 +120,12 @@
                 </div>
             </div>
 
-            <form class="contact-form-pro fade-up">
-                <input type="text" class="input-pro" placeholder="Full Name" required>
-                <input type="email" class="input-pro" placeholder="Digital Address" required>
-                <input type="text" class="input-pro" placeholder="Inquiry Type" required>
-                <textarea class="input-pro" rows="4" placeholder="Brief Description of Objectives" required></textarea>
+            <form class="contact-form-pro fade-up" action="https://formspree.io/f/mnjvdanb" method="POST">
+                <input type="text" name="name" class="input-pro" placeholder="Full Name" required>
+                <input type="email" name="email" class="input-pro" placeholder="Digital Address" required>
+                <input type="text" name="inquiry_type" class="input-pro" placeholder="Inquiry Type" required>
+                <textarea name="message" class="input-pro" rows="4" placeholder="Brief Description of Objectives"
+                    required></textarea>
                 <button type="submit" class="btn-pro btn-pro-primary" style="width: 100%;">Submit Inquiry</button>
             </form>
         </div>
