@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" href="/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offerings | Norzin Consultancy</title>
@@ -22,22 +23,58 @@
             border-color: var(--color-accent);
         }
     </style>
-  <script type="module" crossorigin src="/assets/main-x2fxgqHu.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-BMuBBsJX.css">
+  <script type="module" crossorigin src="/assets/main-DV_R5K2G.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CStBkttn.css">
 </head>
 
-<body style="background: #000;">
+<body>
     <nav class="navbar-pro">
         <a href="/" class="logo-pro">
             <div class="logo-icon-pro"></div>
-            <span>Norzin</span>
         </a>
         <div class="nav-links-pro">
-            <a href="/" class="nav-link-pro">Expertise</a>
-            <a href="/about/" class="nav-link-pro">Heritage</a>
-            <a href="/services/" class="nav-link-pro active">Offerings</a>
-            <a href="/insights/" class="nav-link-pro">Mindset</a>
-            <a href="/contact/" class="nav-link-pro">Connect</a>
+            <a href="/about/" class="nav-link-pro">About</a>
+            <a href="/services/" class="nav-link-pro active">Services</a>
+            <a href="/insights/" class="nav-link-pro">Insights</a>
+            <a href="/contact/" class="nav-link-pro">Contact</a>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme"></button>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-nav-links">
+                <div class="mobile-nav-item">
+                    <a href="/about/" class="mobile-nav-link">About</a>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-link services-toggle">Services +</button>
+                    <div class="mobile-sub-menu">
+                        <a href="/services/financial-strategy/" class="mobile-nav-link mobile-sub-link">Financial
+                            Strategy</a>
+                        <a href="/services/business-strategy/" class="mobile-nav-link mobile-sub-link">Business
+                            Strategy</a>
+                        <a href="/services/operational-excellence/" class="mobile-nav-link mobile-sub-link">Operational
+                            Excellence</a>
+                        <a href="/services/capacity-building/" class="mobile-nav-link mobile-sub-link">Capacity
+                            Building</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <a href="/insights/" class="mobile-nav-link">Insights</a>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <a href="/contact/" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -48,7 +85,8 @@
                     style="color: var(--color-accent); letter-spacing: 4px; font-size: 0.75rem; text-transform: uppercase;">Engagement
                     Models</span>
                 <h1 style="font-size: clamp(3rem, 8vw, 5rem); font-style: italic; margin-top: var(--space-sm);">Core
-                    <span class="text-accent-gradient">Offerings</span></h1>
+                    <span class="text-accent-gradient">Services</span>
+                </h1>
             </div>
         </div>
     </header>
@@ -56,13 +94,13 @@
     <section class="section">
         <div class="container"
             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--space-2xl);">
-            <div class="service-card-pro fade-up">
+            <div class="service-card-pro fade-up card-clickable" data-url="/services/financial-strategy/">
                 <div>
                     <span style="color: var(--color-accent); font-size: 0.875rem;">01</span>
-                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Financial Intelligence</h3>
+                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Financial Strategy</h3>
                 </div>
-                <p style="color: var(--color-text-muted);">Expert orchestration of organizational finances, ensuring
-                    peak operational efficiency and absolute compliance.</p>
+                <p style="color: var(--color-text-muted);">Expert coordination of organizational finances, ensuring
+                    operational efficiency and full compliance.</p>
                 <ul
                     style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); color: var(--color-text); font-size: 0.875rem;">
                     <li>• Bookkeeping</li>
@@ -72,12 +110,12 @@
                 </ul>
             </div>
 
-            <div class="service-card-pro fade-up">
+            <div class="service-card-pro fade-up card-clickable" data-url="/services/business-strategy/">
                 <div>
                     <span style="color: var(--color-accent); font-size: 0.875rem;">02</span>
-                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Business Evolution</h3>
+                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Business Strategy</h3>
                 </div>
-                <p style="color: var(--color-text-muted);">Strategic adaptation and growth models designed for small
+                <p style="color: var(--color-text-muted);">Strategic growth models designed for small
                     businesses seeking sustainable competitive advantage.</p>
                 <ul
                     style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); color: var(--color-text); font-size: 0.875rem;">
@@ -88,44 +126,99 @@
                 </ul>
             </div>
 
-            <div class="service-card-pro fade-up">
+            <div class="service-card-pro fade-up card-clickable" data-url="/services/operational-excellence/">
                 <div>
                     <span style="color: var(--color-accent); font-size: 0.875rem;">03</span>
-                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Organizational Mastery</h3>
+                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Operational Excellence</h3>
                 </div>
                 <p style="color: var(--color-text-muted);">Architecting internal structures that foster high-performance
-                    cultures and long-term institutional resilience.</p>
+                    cultures and institutional resilience.</p>
                 <ul
                     style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); color: var(--color-text); font-size: 0.875rem;">
                     <li>• HR Policy Design</li>
                     <li>• Ops Efficiency</li>
-                    <li>• Elite Leadership</li>
+                    <li>• Leadership Dev</li>
                     <li>• Change Mgmt</li>
                 </ul>
             </div>
 
-            <div class="service-card-pro fade-up">
+            <div class="service-card-pro fade-up card-clickable" data-url="/services/capacity-building/">
                 <div>
                     <span style="color: var(--color-accent); font-size: 0.875rem;">04</span>
-                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Economic Sovereignty</h3>
+                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">Capacity Building</h3>
                 </div>
-                <p style="color: var(--color-text-muted);">Empowering individuals and communities with the specialized
-                    skills needed for economic independence.</p>
+                <p style="color: var(--color-text-muted);">Empowering individuals and communities with specialized
+                    skills for professional and economic advancement.</p>
                 <ul
                     style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); color: var(--color-text); font-size: 0.875rem;">
                     <li>• Job Readiness</li>
-                    <li>• Digital Mastery</li>
+                    <li>• Digital Skills</li>
                     <li>• Youth Programs</li>
                     <li>• Career Guidance</li>
+                </ul>
+            </div>
+
+            <div class="service-card-pro fade-up card-clickable" data-url="/services/ai-integration/">
+                <div>
+                    <span style="color: var(--color-accent); font-size: 0.875rem;">05</span>
+                    <h3 style="font-size: 2rem; margin-top: var(--space-xs);">AI Integration</h3>
+                </div>
+                <p style="color: var(--color-text-muted);">Empowering businesses to leverage artificial intelligence
+                    for efficiency and providing comprehensive AI training.</p>
+                <ul
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); color: var(--color-text); font-size: 0.875rem;">
+                    <li>• AI Strategy</li>
+                    <li>• AI Tools Training</li>
+                    <li>• Workflow Automation</li>
+                    <li>• AI Readiness</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <footer class="footer-pro">
-        <div class="container" style="text-align: center;">
-            <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl);">Seeking a bespoke strategy?</p>
-            <a href="/contact/" class="btn-pro btn-pro-primary">Request Consultation</a>
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-3xl); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-2xl); margin-bottom: var(--space-2xl);">
+            <div>
+                <a href="/" class="logo-pro" style="margin-bottom: var(--space-md);">
+                    <div class="logo-icon-pro"></div>
+                </a>
+                <p style="color: var(--color-text-muted); font-size: 0.875rem;">Redefining consultancy for the digital
+                    enlightenment age.</p>
+            </div>
+            <div>
+                <h4
+                    style="margin-bottom: var(--space-md); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px;">
+                    Quick Links</h4>
+                <ul style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                    <li><a href="/" class="nav-link-pro" style="font-size: 0.75rem;">Home</a></li>
+                    <li><a href="/about/" class="nav-link-pro" style="font-size: 0.75rem;">About</a></li>
+                    <li><a href="/services/" class="nav-link-pro" style="font-size: 0.75rem;">Services</a></li>
+                    <li><a href="/insights/" class="nav-link-pro" style="font-size: 0.75rem;">Insights</a></li>
+                    <li><a href="/contact/" class="nav-link-pro" style="font-size: 0.75rem;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4
+                    style="margin-bottom: var(--space-md); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px;">
+                    Services</h4>
+                <ul style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                    <li><a href="/services/financial-strategy/" class="nav-link-pro"
+                            style="font-size: 0.75rem;">Financial Strategy</a></li>
+                    <li><a href="/services/business-strategy/" class="nav-link-pro" style="font-size: 0.75rem;">Business
+                            Strategy</a></li>
+                    <li><a href="/services/operational-excellence/" class="nav-link-pro"
+                            style="font-size: 0.75rem;">Operational Excellence</a></li>
+                    <li><a href="/services/capacity-building/" class="nav-link-pro" style="font-size: 0.75rem;">Capacity
+                            Building</a></li>
+                    <li><a href="/services/ai-integration/" class="nav-link-pro" style="font-size: 0.75rem;">AI
+                            Integration</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container"
+            style="text-align: center; color: var(--color-text-muted); font-size: 0.75rem; letter-spacing: 1px;">
+            &copy; 2026 NORZIN CONSULTANCY. ELEVATED EXCELLENCE.
         </div>
     </footer>
 

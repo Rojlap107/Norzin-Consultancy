@@ -1,0 +1,5 @@
+/* Render rewrite rules for SPA-style routing */
+/* This ensures query string routes work correctly */
+
+/insights/article/* /insights/article/index.html 200
+/services/* /services/:splat 200

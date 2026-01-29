@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" href="/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect | Norzin Consultancy</title>
@@ -38,22 +39,58 @@
             letter-spacing: 2px;
         }
     </style>
-  <script type="module" crossorigin src="/assets/main-x2fxgqHu.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-BMuBBsJX.css">
+  <script type="module" crossorigin src="/assets/main-DV_R5K2G.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CStBkttn.css">
 </head>
 
-<body style="background: #000;">
+<body>
     <nav class="navbar-pro">
         <a href="/" class="logo-pro">
             <div class="logo-icon-pro"></div>
-            <span>Norzin</span>
         </a>
         <div class="nav-links-pro">
-            <a href="/" class="nav-link-pro">Expertise</a>
-            <a href="/about/" class="nav-link-pro">Heritage</a>
-            <a href="/services/" class="nav-link-pro">Offerings</a>
-            <a href="/insights/" class="nav-link-pro">Mindset</a>
-            <a href="/contact/" class="nav-link-pro active">Connect</a>
+            <a href="/about/" class="nav-link-pro">About</a>
+            <a href="/services/" class="nav-link-pro">Services</a>
+            <a href="/insights/" class="nav-link-pro">Insights</a>
+            <a href="/contact/" class="nav-link-pro active">Contact</a>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme"></button>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-nav-links">
+                <div class="mobile-nav-item">
+                    <a href="/about/" class="mobile-nav-link">About</a>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-link services-toggle">Services +</button>
+                    <div class="mobile-sub-menu">
+                        <a href="/services/financial-strategy/" class="mobile-nav-link mobile-sub-link">Financial
+                            Strategy</a>
+                        <a href="/services/business-strategy/" class="mobile-nav-link mobile-sub-link">Business
+                            Strategy</a>
+                        <a href="/services/operational-excellence/" class="mobile-nav-link mobile-sub-link">Operational
+                            Excellence</a>
+                        <a href="/services/capacity-building/" class="mobile-nav-link mobile-sub-link">Capacity
+                            Building</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <a href="/insights/" class="mobile-nav-link">Insights</a>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <a href="/contact/" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -62,9 +99,10 @@
             style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4xl); align-items: start;">
             <div class="fade-up">
                 <span
-                    style="color: var(--color-accent); letter-spacing: 4px; font-size: 0.75rem; text-transform: uppercase;">Concierge</span>
-                <h1 style="font-size: clamp(3rem, 6vw, 5rem); font-style: italic; margin-top: var(--space-sm);">Initiate
-                    <br><span class="text-accent-gradient">Connection</span></h1>
+                    style="color: var(--color-accent); letter-spacing: 4px; font-size: 0.75rem; text-transform: uppercase;">Engagement</span>
+                <h1 style="font-size: clamp(3rem, 6vw, 5rem); font-style: italic; margin-top: var(--space-sm);">Let's
+                    <span class="text-accent-gradient">Consult</span>
+                </h1>
 
                 <div style="margin-top: var(--space-3xl); display: flex; flex-direction: column; gap: var(--space-xl);">
                     <div>
@@ -76,8 +114,9 @@
                     <div>
                         <h4
                             style="text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; color: var(--color-accent); margin-bottom: var(--space-xs);">
-                            Digital</h4>
-                        <p style="font-size: 1.25rem;">hi@norzinconsultancy.com</p>
+                            Contact</h4>
+                        <p style="font-size: 1.25rem;">Tenzin.Norsang@norzinconsultancy.com</p>
+                        <p style="font-size: 1.25rem;">Tenzin.Paljor@norzinconsultancy.com</p>
                     </div>
                 </div>
             </div>
@@ -87,14 +126,54 @@
                 <input type="email" class="input-pro" placeholder="Digital Address" required>
                 <input type="text" class="input-pro" placeholder="Inquiry Type" required>
                 <textarea class="input-pro" rows="4" placeholder="Brief Description of Objectives" required></textarea>
-                <button type="submit" class="btn-pro btn-pro-primary" style="width: 100%;">Initialize Protocol</button>
+                <button type="submit" class="btn-pro btn-pro-primary" style="width: 100%;">Submit Inquiry</button>
             </form>
         </div>
     </header>
 
     <footer class="footer-pro">
-        <div class="container" style="text-align: center; color: var(--color-text-muted); font-size: 0.75rem;">
-            NORZIN CONSULTANCY &copy; 2026
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-3xl); border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-2xl); margin-bottom: var(--space-2xl);">
+            <div>
+                <a href="/" class="logo-pro" style="margin-bottom: var(--space-md);">
+                    <div class="logo-icon-pro"></div>
+                </a>
+                <p style="color: var(--color-text-muted); font-size: 0.875rem;">Redefining consultancy for the digital
+                    enlightenment age.</p>
+            </div>
+            <div>
+                <h4
+                    style="margin-bottom: var(--space-md); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px;">
+                    Quick Links</h4>
+                <ul style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                    <li><a href="/" class="nav-link-pro" style="font-size: 0.75rem;">Home</a></li>
+                    <li><a href="/about/" class="nav-link-pro" style="font-size: 0.75rem;">About</a></li>
+                    <li><a href="/services/" class="nav-link-pro" style="font-size: 0.75rem;">Services</a></li>
+                    <li><a href="/insights/" class="nav-link-pro" style="font-size: 0.75rem;">Insights</a></li>
+                    <li><a href="/contact/" class="nav-link-pro" style="font-size: 0.75rem;">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4
+                    style="margin-bottom: var(--space-md); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px;">
+                    Services</h4>
+                <ul style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                    <li><a href="/services/financial-strategy/" class="nav-link-pro"
+                            style="font-size: 0.75rem;">Financial Strategy</a></li>
+                    <li><a href="/services/business-strategy/" class="nav-link-pro" style="font-size: 0.75rem;">Business
+                            Strategy</a></li>
+                    <li><a href="/services/operational-excellence/" class="nav-link-pro"
+                            style="font-size: 0.75rem;">Operational Excellence</a></li>
+                    <li><a href="/services/capacity-building/" class="nav-link-pro" style="font-size: 0.75rem;">Capacity
+                            Building</a></li>
+                    <li><a href="/services/ai-integration/" class="nav-link-pro" style="font-size: 0.75rem;">AI
+                            Integration</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container"
+            style="text-align: center; color: var(--color-text-muted); font-size: 0.75rem; letter-spacing: 1px;">
+            &copy; 2026 NORZIN CONSULTANCY. ELEVATED EXCELLENCE.
         </div>
     </footer>
 
