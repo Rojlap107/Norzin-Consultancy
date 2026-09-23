@@ -121,11 +121,11 @@
                 </div>
             </div>
 
-            <form class="contact-form-pro fade-up">
-                <input type="text" class="input-pro" placeholder="Full Name" required>
-                <input type="email" class="input-pro" placeholder="Digital Address" required>
-                <input type="text" class="input-pro" placeholder="Inquiry Type" required>
-                <textarea class="input-pro" rows="4" placeholder="Brief Description of Objectives" required></textarea>
+            <form class="contact-form-pro fade-up" action="https://formspree.io/f/mnjvdanb" method="POST">
+                <input type="text" name="name" class="input-pro" placeholder="Full Name" required>
+                <input type="email" name="email" class="input-pro" placeholder="Email" required>
+                <input type="text" name="inquiry_type" class="input-pro" placeholder="Subject" required>
+                <textarea name="message" class="input-pro" rows="4" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn-pro btn-pro-primary" style="width: 100%;">Submit Inquiry</button>
             </form>
         </div>
@@ -138,8 +138,7 @@
                 <a href="/" class="logo-pro" style="margin-bottom: var(--space-md);">
                     <div class="logo-icon-pro"></div>
                 </a>
-                <p style="color: var(--color-text-muted); font-size: 0.875rem;">Redefining consultancy for the digital
-                    enlightenment age.</p>
+                <p style="color: var(--color-text-muted); font-size: 0.875rem;">Strategic partnership for institutions and organizations, based in Dharamsala.</p>
             </div>
             <div>
                 <h4
@@ -173,7 +172,7 @@
         </div>
         <div class="container"
             style="text-align: center; color: var(--color-text-muted); font-size: 0.75rem; letter-spacing: 1px;">
-            &copy; 2026 NORZIN CONSULTANCY. ELEVATED EXCELLENCE.
+            &copy; 2026 Norzin Consultancy.
         </div>
     </footer>
 
